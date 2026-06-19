@@ -3,15 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
 		3022DE202FE5299700847CF8 /* 185MomentMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 185MomentMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		727252FD9866D8FCCE4561C6 /* Pods-185MomentMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-185MomentMap.debug.xcconfig"; path = "Target Support Files/Pods-185MomentMap/Pods-185MomentMap.debug.xcconfig"; sourceTree = "<group>"; };
+		7F23365CE36F8BA31CF1F9D2 /* Pods_185MomentMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_185MomentMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F127AC9D90653ABED0952A00 /* Pods-185MomentMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-185MomentMap.release.xcconfig"; path = "Target Support Files/Pods-185MomentMap/Pods-185MomentMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3022DE322FE5299800847CF8 /* Exceptions for "185MomentMap" folder in "185MomentMap" target */ = {
+		3022DE622FE529D300847CF8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +24,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3022DE222FE5299700847CF8 /* 185MomentMap */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3022DE322FE5299800847CF8 /* Exceptions for "185MomentMap" folder in "185MomentMap" target */,
-			);
-			path = 185MomentMap;
-			sourceTree = "<group>";
-		};
+		3022DE5A2FE529D200847CF8 /* 185MomentMap */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3022DE622FE529D300847CF8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = 185MomentMap; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +41,10 @@
 		3022DE172FE5299700847CF8 = {
 			isa = PBXGroup;
 			children = (
-				3022DE222FE5299700847CF8 /* 185MomentMap */,
+				3022DE5A2FE529D200847CF8 /* 185MomentMap */,
 				3022DE212FE5299700847CF8 /* Products */,
+				97A67C680EAAF5837C96E0EA /* Pods */,
+				BF10427A7BCC27C1A1732991 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +56,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		97A67C680EAAF5837C96E0EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727252FD9866D8FCCE4561C6 /* Pods-185MomentMap.debug.xcconfig */,
+				F127AC9D90653ABED0952A00 /* Pods-185MomentMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF10427A7BCC27C1A1732991 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F23365CE36F8BA31CF1F9D2 /* Pods_185MomentMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3022DE332FE5299800847CF8 /* Build configuration list for PBXNativeTarget "185MomentMap" */;
 			buildPhases = (
+				61C5CEAC741F7D1C60DABB1F /* [CP] Check Pods Manifest.lock */,
 				3022DE1C2FE5299700847CF8 /* Sources */,
 				3022DE1D2FE5299700847CF8 /* Frameworks */,
 				3022DE1E2FE5299700847CF8 /* Resources */,
@@ -74,11 +90,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3022DE222FE5299700847CF8 /* 185MomentMap */,
+				3022DE5A2FE529D200847CF8 /* 185MomentMap */,
 			);
 			name = 185MomentMap;
-			packageProductDependencies = (
-			);
 			productName = 185MomentMap;
 			productReference = 3022DE202FE5299700847CF8 /* 185MomentMap.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +113,7 @@
 				};
 			};
 			buildConfigurationList = 3022DE1B2FE5299700847CF8 /* Build configuration list for PBXProject "185MomentMap" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +121,6 @@
 				Base,
 			);
 			mainGroup = 3022DE172FE5299700847CF8;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 3022DE212FE5299700847CF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +140,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61C5CEAC741F7D1C60DABB1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-185MomentMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3022DE1C2FE5299700847CF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +178,7 @@
 /* Begin XCBuildConfiguration section */
 		3022DE342FE5299800847CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727252FD9866D8FCCE4561C6 /* Pods-185MomentMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -150,8 +189,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,17 +200,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "home.-85MomentMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3022DE352FE5299800847CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F127AC9D90653ABED0952A00 /* Pods-185MomentMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -181,8 +226,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -191,12 +237,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "home.-85MomentMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
